@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] — 2026-05-23
+
+### Changed
+- 「秘書しおり」のキャラ名を **「秘書」** に統一（他キャラ：ハンター／バンカー／番頭等と同じく役割名のみで揃える）
+- README の解凍手順を **Mac／Windows 両対応** に拡張
+  - Mac: ダブルクリックで自動展開
+  - Windows: 右クリック →「すべて展開」→「展開」
+
 ## [0.3.0] — 2026-05-23
 
 ### Changed
@@ -18,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `secretary/owner-profile.md` — オーナープロフィール専用ファイル
 - ルート CLAUDE.md に「初回起動時の秘書ヒアリング」ルールを追加
-  - 初回起動時、`owner-profile.md` が空欄なら秘書しおりが対話形式でヒアリング
+  - 初回起動時、`owner-profile.md` が空欄なら秘書が対話形式でヒアリング
   - 1問ずつ・スキップOK・回答ごとに `owner-profile.md` を更新
 - `secretary/CLAUDE.md` にプロフィール管理の役割を明示
 
@@ -33,7 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - 初版リリース
 - 司令塔1 + オフェンス3 + ディフェンス3 の7部署構成
-  - 🎯 秘書（しおり）
+  - 🎯 秘書
   - ⚔️ 物件開拓＆リサーチ（ハンター）
   - ⚔️ 融資（バンカー）
   - ⚔️ 戦略・参謀（軍師）
