@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] — 2026-05-23
+
+### Added
+- `secretary/owner-profile.md` — オーナープロフィール専用ファイル
+- ルート CLAUDE.md に「初回起動時の秘書ヒアリング」ルールを追加
+  - 初回起動時、`owner-profile.md` が空欄なら秘書しおりが対話形式でヒアリング
+  - 1問ずつ・スキップOK・回答ごとに `owner-profile.md` を更新
+- `secretary/CLAUDE.md` にプロフィール管理の役割を明示
+
+### Changed
+- オーナープロフィールの管理を CLAUDE.md から `secretary/owner-profile.md` に分離
+  - 組織のコア設定（CLAUDE.md）と個人データ（プロフィール）を分離
+  - 受講者が CLAUDE.md を直接編集しなくて済む設計に
+- README のクイックスタートを「秘書ヒアリング」ベースに書き直し
+
 ## [0.1.0] — 2026-05-24
 
 ### Added
