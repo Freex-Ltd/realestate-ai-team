@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] — 2026-05-23
+
+### Added
+- **初回起動時に「インポート」モードを追加**
+  - 秘書がオーナーに「A. インポート ／ B. ヒアリング」の2択を提示するようになった
+  - インポート方式：ChatGPT・Gemini など他のAIで話していた内容をペーストすれば、秘書が自動解析して `secretary/owner-profile.md` に書き起こす
+  - これにより、ゼロから1問1問のヒアリングを回す必要がなくなり、既存ユーザーの移行が圧倒的に楽になった
+  - 長文のペースト元テキストは `secretary/inbox/imported-YYYY-MM-DD.md` に原文保存
+
+### Changed
+- `secretary/owner-profile.md` 冒頭にインポート機能の案内を追記
+- `secretary/CLAUDE.md` にインポート時の運用ルールを明文化
+- README のクイックスタートを2択構成に書き直し
+
 ## [0.4.0] — 2026-05-23
 
 ### Changed
